@@ -529,7 +529,11 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 93 }
+// 8mm screw (1.25mm)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 2560, 93 }
+
+// 8mm leadscrew (2mm)
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 93 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1056,7 +1060,7 @@
 
 // Preheat Constants
 #define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
@@ -1262,13 +1266,13 @@
 // This option overrides the default number of encoder pulses needed to
 // produce one step. Should be increased for high-resolution encoders.
 //
-//#define ENCODER_PULSES_PER_STEP 1
+#define ENCODER_PULSES_PER_STEP 2
 
 //
 // Use this option to override the number of step signals required to
 // move between next/prev menu items.
 //
-//#define ENCODER_STEPS_PER_MENU_ITEM 5
+#define ENCODER_STEPS_PER_MENU_ITEM 3
 
 /**
  * Encoder Direction Options
