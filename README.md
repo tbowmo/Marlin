@@ -1,3 +1,10 @@
+# Nerdclub Marlin FW
+
+This is a clone of Marlin FW, with modifications that make it compatible with Geeetech I3 acryllic edition.
+
+OBS! you need to check around line 533 in Configuration.h, and change it according
+to which type of z-axis screw that you have.
+ 
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
